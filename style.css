@@ -1,0 +1,22 @@
+/* Body styling */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif; /* Added generic font family */
+    color: white;
+}
+
+/* h1 styling */
+h1 {
+    color: grey;
+    font-family: Verdana, sans-serif; /* Added generic font family */
+}
+
+/* maindiv class styling */
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
