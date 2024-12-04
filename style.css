@@ -1,22 +1,110 @@
-/* Body styling */
 body {
-    background-color: black;
-    font-family: Arial, sans-serif; /* Added generic font family */
-    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
 }
 
-/* h1 styling */
-h1 {
-    color: grey;
-    font-family: Verdana, sans-serif; /* Added generic font family */
+.top-bar {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 10px;
 }
 
-/* maindiv class styling */
-.maindiv {
-    background-color: white;
-    color: black;
-    width: 300px;
-    padding: 20px;
-    border-radius: 25px;
+.header-content {
     text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: #8e24aa;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ba68c8;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-card {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-list {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recommendation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.recommendation-card {
+    width: 200px;
+    background-color: #f3e5f5;
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a1b9a;
 }
