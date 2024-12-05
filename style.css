@@ -41,6 +41,14 @@ header {
     text-decoration: underline; /* Underline email on hover */
 }
 
+/* Profile Heading Emoji Styling */
+.profile_name::after {
+    content: " 💼"; /* Adds a briefcase emoji */
+    font-size: 1.2em; /* Slightly larger emoji */
+    margin-left: 5px; /* Spacing between text and emoji */
+}
+
+
 /* Navigation Menu Links */
 nav ul {
     list-style: none;

@@ -26,32 +26,35 @@ document.addEventListener("DOMContentLoaded", () => {
 function addRecommendation(event) {
     event.preventDefault(); // Prevents form submission and page reload
 
-    const nameInput = document.getElementById('name_input').value.trim();
-    const recommendationInput = document.getElementById('recommendation_input').value.trim();
+    const nameInput = document.getElementById("name_input").value.trim();
+    const recommendationInput = document.getElementById("recommendation_input").value.trim();
+    const recommendationList = document.querySelector("#recommendation_list") || document.getElementById("recommendations");
 
-    // Check if recommendation input is not empty
-    if (recommendationInput) {
-        const recommendationSection = document.getElementById('recommendations');
-        const newRecommendation = document.createElement('div');
-        newRecommendation.classList.add('recommendation');
-
-        // Construct the recommendation text
-        if (nameInput) {
-            newRecommendation.innerHTML = `<strong>${nameInput} says:</strong><br>"${recommendationInput}"`;
-        } else {
-            newRecommendation.textContent = `"${recommendationInput}"`;
-        }
-
-        // Insert the new recommendation before the form
-        recommendationSection.insertBefore(newRecommendation, recommendationSection.lastElementChild);
-
-        // Clear the form inputs
-        document.getElementById('name_input').value = '';
-        document.getElementById('recommendation_input').value = '';
-
-        // Log a message indicating the function was triggered
-        console.log("addRecommendation function triggered: New recommendation added!");
-    } else {
-        console.log("addRecommendation function triggered: Recommendation input is empty.");
+    // Validate word count (25-30 words)
+    const wordCount = recommendationInput.split(/\s+/).length;
+    if (wordCount < 25 || wordCount > 30) {
+        alert("Please ensure your recommendation is between 25 and 30 words.");
+        return;
     }
+
+    // Create a new recommendation element
+    const newRecommendation = document.createElement("div");
+    newRecommendation.classList.add("recommendation");
+
+    // Add the name if provided
+    if (nameInput) {
+        newRecommendation.innerHTML = `<strong>${nameInput} says:</strong> "${recommendationInput}"`;
+    } else {
+        newRecommendation.textContent = `"${recommendationInput}"`;
+    }
+
+    // Append the new recommendation
+    recommendationList.appendChild(newRecommendation);
+
+    // Clear the input fields
+    document.getElementById("name_input").value = "";
+    document.getElementById("recommendation_input").value = "";
+
+    // Log the action for debugging
+    console.log("addRecommendation triggered: New recommendation added.");
 }
