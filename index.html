@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jane Doe Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <title>Jane Doe Portfolio</title>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Jane Doe</h1>
-      <p>jdoe@email.com | +1-345-678-4598</p>
-    </div>
+  <header class="header">
+    <h1 class="profile_name">Jane Doe</h1>
+    <p>jdoe@email.com | +1-345-678-4598</p>
     <nav>
-      <ul>
+      <ul class="topmenu">
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -22,90 +20,80 @@
     </nav>
   </header>
 
-  <main>
-    <!-- About Me Section -->
-    <section id="about">
-      <img src="cartoon-laptop-girl.png" alt="Cartoon Girl" class="profile-pic">
-      <h2>Hi, I'm Jane Doe! 👋</h2>
-      <p>
-        I am a full stack developer with 2 years of experience in both application and presentation layers. I have worked on applications and microservices deployed on IBM Cloud. I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
-      </p>
-    </section>
+  <section id="about" class="about">
+    <img src="919826.webp" alt="Cartoon Girl with Laptop" class="profile_image">
+    <h2>Hi, I'm Jane Doe! 👋</h2>
+    <p>
+      I am a full-stack developer with 2 years of experience in both application
+      and presentation layers. I have worked on applications and microservices deployed on IBM Cloud.
+    </p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <img src="html-icon.png" alt="HTML Icon">
-          <h3>HTML</h3>
-          <p>2 years experience</p>
-        </div>
-        <div class="skill-card">
-          <img src="javascript-icon.png" alt="JavaScript Icon">
-          <h3>JavaScript</h3>
-          <p>1.5 years experience</p>
-        </div>
-        <div class="skill-card">
-          <img src="java-icon.png" alt="Java Icon">
-          <h3>Java</h3>
-          <p>0.5 years experience</p>
-        </div>
-        <div class="skill-card">
-          <img src="react-icon.png" alt="React Icon">
-          <h3>React</h3>
-          <p>1 year experience</p>
-        </div>
-        <div class="skill-card">
-          <img src="nodejs-icon.png" alt="Node.js Icon">
-          <h3>Node.js</h3>
-          <p>1 year experience</p>
-        </div>
-        <div class="skill-card">
-          <img src="css-icon.png" alt="CSS Icon">
-          <h3>CSS</h3>
-          <p>2 years experience</p>
-        </div>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="1051277.webp" alt="HTML Icon">
+        <h3>HTML</h3>
+        <p>2 years experience</p>
       </div>
-    </section>
+      <div class="skill-card">
+        <img src="javascript-icon-256x256-8sn98o22.webp" alt="JavaScript Icon">
+        <h3>JavaScript</h3>
+        <p>1.5 years experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="java-icon-378x512-w60vlu77.webp" alt="Java Icon">
+        <h3>Java</h3>
+        <p>0.5 years experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="node-js-icon-227x256-913nazt0.webp" alt="Node.js Icon">
+        <h3>Node.js</h3>
+        <p>1 year experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="React.js_logo-512.webp" alt="React Icon">
+        <h3>React</h3>
+        <p>1 year experience</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Chatbot:</b> Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.</li>
-        <li><b>Sentiment Analyzer:</b> Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU.</li>
-        <li><b>Fashion Website:</b> Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart using stripe for payment gateway.</li>
-      </ul>
-    </section>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Chatbot:</strong> Developed a secure website integrated with a chatbot using HTML, CSS, and IBM Watson Assistant.</li>
+      <li><strong>Sentiment Analyzer:</strong> Deployed a sentiment analyzer for box reviews on an eCommerce platform.</li>
+      <li><strong>Fashion Website:</strong> Created a multi-page website for a fashion retailer with Stripe payment integration.</li>
+    </ul>
+  </section>
 
-    <!-- Recommendations Section -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div class="recommendation-card">
-        <p>"Jane is a very quick learner and quickly grasps key concepts of web development."</p>
-      </div>
-      <div class="recommendation-card">
-        <p>"Working with Jane has been an awesome experience. She is highly knowledgeable."</p>
-      </div>
-      <div class="recommendation-card">
-        <p>"Jane is a committed resource who has in-depth knowledge about the domain."</p>
-      </div>
-    </section>
-
-    <!-- Leave a Recommendation -->
-    <section id="leave-recommendation">
-      <h2>Leave a Recommendation</h2>
-      <form id="recommendation-form">
-        <input type="text" id="name" placeholder="Name (Optional)">
-        <textarea id="message" placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+  <section id="recommendations" class="recommendations">
+    <h2>Recommendations</h2>
+    <div class="recommendation">
+      <p>"Jane is a quick learner and grasped web development concepts quickly!"</p>
+    </div>
+    <div class="recommendation">
+      <p>"Working with Jane was an amazing experience. She is knowledgeable and resourceful."</p>
+    </div>
+    <div class="recommendation">
+      <p>"Jane's technical knowledge is outstanding. I highly recommend her!"</p>
+    </div>
+    <form id="recommendation-form">
+      <h3>Leave a Recommendation</h3>
+      <input type="text" id="name" placeholder="Name (Optional)">
+      <textarea id="message" placeholder="Message"></textarea>
+      <button type="button" id="recommend_btn" onclick="addRecommendation()">Submit</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2024 Jane Doe Portfolio</p>
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" <viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+    </a>
   </footer>
 
   <script src="script.js"></script>
