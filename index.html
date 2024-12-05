@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
     <header id="home">
         <div class="profile_name">
@@ -23,100 +24,114 @@
             </ul>
         </nav>
     </header>
-    </body>
-  <section id="aboutme">
-    <h2><span class="highlight">About Me</span></h2>
-    <img
-        src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/profile-picture.webp?v=1733410457729"
-        alt="Profile Picture"
-        class="profile_image"
-    />
-    <p>
-        Hello! I’m Ali Hassan, a passionate web developer with experience to come in
-        the most modern, responsive websites.
-    </p>
-</section>
+
+    <section id="aboutme">
+        <h2><span class="highlight">About Me</span></h2>
+        <img
+            src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/profile-picture.webp?v=1733410457729"
+            alt="Profile Picture"
+            class="profile_image"
+        />
+        <p>
+            Hello! I’m Ali Hassan, a passionate web developer with experience to come in
+            the most modern, responsive websites.
+        </p>
+    </section>
+
     <section id="skills">
-      <h2>Skills</h2>
+        <h2>Skills</h2>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Chatbot</h3>
-        <p>
-          • Developed a secure website integrated with chatbot for an automobile
-          client using HTML, CSS, JavaScript, and IBM Watson Assistant.
-        </p>
-      </div>
-      <div class="project-card">
-        <h3>Sentiment Analyzer</h3>
-        <p>
-          • Developed and deployed a sentiment analyzer for the box reviews
-          section of an eCommerce platform using IBM NLU.
-        </p>
-      </div>
-      <div class="project-card">
-        <h3>Fashion Website</h3>
-        <p>
-          • Created a styled multi-page website for a new player in the fashion
-          industry and integrated it with a shopping cart using Stripe for
-          payment.
-        </p>
-      </div>
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Chatbot</h3>
+            <p>
+                • Developed a secure website integrated with chatbot for an automobile
+                client using HTML, CSS, JavaScript, and IBM Watson Assistant.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <p>
+                • Developed and deployed a sentiment analyzer for the box reviews
+                section of an eCommerce platform using IBM NLU.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Fashion Website</h3>
+            <p>
+                • Created a styled multi-page website for a new player in the fashion
+                industry and integrated it with a shopping cart using Stripe for
+                payment.
+            </p>
+        </div>
     </section>
-<section id="recommendations">
-    <h2>Recommendations</h2>
-    <div class="recommendation">
-        "John is an excellent web developer with a keen eye for design."
-    </div>
-    <div class="recommendation">
-        "His attention to detail and technical skills are outstanding."
-    </div>
-    <div class="recommendation">
-        "I highly recommend John for any web development project."
-    </div>
-    <div class="recommendation">
-        "John is an innovative problem-solver. He transformed our outdated
-        website into a fast, modern, and user-friendly platform."
-    </div>
-    <div class="recommendation">
-        "Working with John was a pleasure. His ability to take complex
-        requirements and deliver clean, efficient code is truly remarkable."
-    </div>
 
-    <!-- Recommendation Form -->
-    <form id="recommendation_form" onsubmit="addRecommendation(event)">
-        <input type="text" id="name_input" placeholder="Your Name (Optional)" />
-        <textarea
-            id="recommendation_input"
-            placeholder="Write your recommendation here (25-30 words)..."
-            required
-        ></textarea>
-        <button id="recommend_btn">Submit</button>
-    </form>
-</section>
-    <footer>
-      <a href="#home">
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div id="recommendation_list">
+            <div class="recommendation">
+                "John is an excellent web developer with a keen eye for design."
+            </div>
+            <div class="recommendation">
+                "His attention to detail and technical skills are outstanding."
+            </div>
+            <div class="recommendation">
+                "I highly recommend John for any web development project."
+            </div>
+            <div class="recommendation">
+                "John is an innovative problem-solver. He transformed our outdated
+                website into a fast, modern, and user-friendly platform."
+            </div>
+            <div class="recommendation">
+                "Working with John was a pleasure. His ability to take complex
+                requirements and deliver clean, efficient code is truly remarkable."
+            </div>
+        </div>
+
+        <!-- Recommendation Form -->
+        <form id="recommendation_form" onsubmit="addRecommendation(event)">
+            <input type="text" id="name_input" placeholder="Your Name (Optional)" />
+            <textarea
+                id="recommendation_input"
+                placeholder="Write your recommendation here (25-30 words)..."
+                required
+            ></textarea>
+            <button id="recommend_btn">Submit</button>
+        </form>
+    </section>
+
+ <footer>
+    <a href="#home">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewbox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#ffffff"
-          width="63px"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewbox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="red" 
+            width="63px"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
         </svg>
-      </a>
-    </footer>
+        <!-- Stroke color changed to red -->
+    </a>
+</footer>
+
+
+
     <div id="popup" class="popup">
-      <p>Recommendation added successfully!</p>
+    <div class="popup-content">
+        <span class="popup-icon">✔️</span>
+        <p>Thanks for leaving a recommendation!</p>
+        <button onclick="closePopup()">Ok</button>
     </div>
+</div>
+
     <script src="script.js"></script>
   </body>
 </html>
