@@ -1,110 +1,77 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333;
 }
 
-.top-bar {
-    background-color: #6a1b9a;
-    color: #ffffff;
-    padding: 10px;
-}
-
-.header-content {
-    text-align: center;
+header {
+  background-color: #5E2B97;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    background-color: #8e24aa;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #ba68c8;
-    border-radius: 5px;
-}
-
-.section {
-    padding: 20px;
-    text-align: center;
+/* About Me Section */
+#about {
+  text-align: center;
+  padding: 40px;
 }
 
 .profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
+  border-radius: 50%;
 }
 
+/* Skills Section */
 .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
 .skill-card {
-    width: 150px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
 }
 
-.project-list {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+.skill-card img {
+  max-width: 50px;
 }
 
-.recommendation-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+/* Projects Section */
+#projects ul {
+  padding: 0 20px;
+  list-style: none;
 }
 
+/* Recommendations */
 .recommendation-card {
-    width: 200px;
-    background-color: #f3e5f5;
-    padding: 15px;
-    border-radius: 8px;
-    font-style: italic;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #8e24aa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #6a1b9a;
+  background-color: #F9F9F9;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
 }

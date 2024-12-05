@@ -1,125 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Doe Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="top-bar">
-        <div class="header-content">
-            <h1 class="name">Jane Doe</h1>
-            <p class="contact">
-                <a href="mailto:jdoe@email.com">jdoe@email.com</a> | +1 345 676 4598
-            </p>
+  <header>
+    <div class="header-content">
+      <h1>Jane Doe</h1>
+      <p>jdoe@email.com | +1-345-678-4598</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about">
+      <img src="cartoon-laptop-girl.png" alt="Cartoon Girl" class="profile-pic">
+      <h2>Hi, I'm Jane Doe! 👋</h2>
+      <p>
+        I am a full stack developer with 2 years of experience in both application and presentation layers. I have worked on applications and microservices deployed on IBM Cloud. I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="html-icon.png" alt="HTML Icon">
+          <h3>HTML</h3>
+          <p>2 years experience</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#recommendations">Recommendations</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="skill-card">
+          <img src="javascript-icon.png" alt="JavaScript Icon">
+          <h3>JavaScript</h3>
+          <p>1.5 years experience</p>
+        </div>
+        <div class="skill-card">
+          <img src="java-icon.png" alt="Java Icon">
+          <h3>Java</h3>
+          <p>0.5 years experience</p>
+        </div>
+        <div class="skill-card">
+          <img src="react-icon.png" alt="React Icon">
+          <h3>React</h3>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-card">
+          <img src="nodejs-icon.png" alt="Node.js Icon">
+          <h3>Node.js</h3>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-card">
+          <img src="css-icon.png" alt="CSS Icon">
+          <h3>CSS</h3>
+          <p>2 years experience</p>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <section id="about" class="section">
-            <img src="https://via.placeholder.com/200" alt="Jane Doe" class="profile-pic">
-            <h2>Hi, I'm Jane Doe! 👋</h2>
-            <p>
-                I am a full stack developer with 2 years of experience in both application
-                and presentation layers. I have worked on applications and microservices
-                deployed on IBM Cloud. I am an avid user of IBM Watson Services and have
-                worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
-            </p>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Chatbot:</b> Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.</li>
+        <li><b>Sentiment Analyzer:</b> Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU.</li>
+        <li><b>Fashion Website:</b> Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart using stripe for payment gateway.</li>
+      </ul>
+    </section>
 
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="https://via.placeholder.com/50" alt="HTML">
-                    <p>HTML</p>
-                    <p>2 years experience</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://via.placeholder.com/50" alt="JavaScript">
-                    <p>JavaScript</p>
-                    <p>1.5 years experience</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://via.placeholder.com/50" alt="Java">
-                    <p>Java</p>
-                    <p>0.5 years experience</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://via.placeholder.com/50" alt="React">
-                    <p>React</p>
-                    <p>1 year experience</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://via.placeholder.com/50" alt="Node.js">
-                    <p>Node.js</p>
-                    <p>1 year experience</p>
-                </div>
-                <div class="skill-card">
-                    <img src="https://via.placeholder.com/50" alt="CSS">
-                    <p>CSS</p>
-                    <p>2 years experience</p>
-                </div>
-            </div>
-        </section>
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="recommendation-card">
+        <p>"Jane is a very quick learner and quickly grasps key concepts of web development."</p>
+      </div>
+      <div class="recommendation-card">
+        <p>"Working with Jane has been an awesome experience. She is highly knowledgeable."</p>
+      </div>
+      <div class="recommendation-card">
+        <p>"Jane is a committed resource who has in-depth knowledge about the domain."</p>
+      </div>
+    </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <ul class="project-list">
-                <li>
-                    <strong>Chatbot:</strong> Developed a secure website integrated with a chatbot for
-                    an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant.
-                </li>
-                <li>
-                    <strong>Sentiment Analyzer:</strong> Developed and deployed a sentiment analyzer
-                    for the box reviews section of an eCommerce platform using IBM NLU.
-                </li>
-                <li>
-                    <strong>Fashion Website:</strong> Created a styled multi-page website for a new player
-                    in the fashion industry and integrated it with a shopping cart using Stripe for
-                    payment gateway.
-                </li>
-            </ul>
-        </section>
+    <!-- Leave a Recommendation -->
+    <section id="leave-recommendation">
+      <h2>Leave a Recommendation</h2>
+      <form id="recommendation-form">
+        <input type="text" id="name" placeholder="Name (Optional)">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
-        <section id="recommendations" class="section">
-            <h2>Recommendations</h2>
-            <div class="recommendation-grid">
-                <div class="recommendation-card">
-                    <p>“Jane is a very quick learner and quickly grasps key concepts of web development.”</p>
-                </div>
-                <div class="recommendation-card">
-                    <p>“Working with Jane has been an awesome experience. She is highly knowledgeable.”</p>
-                </div>
-                <div class="recommendation-card">
-                    <p>“Jane is a committed resource who has in-depth knowledge about the domain.”</p>
-                </div>
-            </div>
+  <footer>
+    <p>&copy; 2024 Jane Doe Portfolio</p>
+  </footer>
 
-            <h3>Leave a Recommendation</h3>
-            <form id="recommendation-form">
-                <label for="name">Name (Optional):</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <label for="recommendation">Message:</label>
-                <textarea id="recommendation" placeholder="Write your recommendation here..."></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Jane Doe</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
