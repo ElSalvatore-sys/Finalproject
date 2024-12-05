@@ -1,17 +1,24 @@
 function addRecommendation() {
-  const name = document.getElementById('name').value;
-  const message = document.getElementById('message').value;
+    const input = document.getElementById('recommendation_input');
+    const value = input.value.trim();
 
-  if (message) {
-    const recommendationDiv = document.createElement('div');
-    recommendationDiv.classList.add('recommendation');
-    recommendationDiv.innerHTML = `<p>"${message}"</p>`;
-    document.querySelector('.recommendations').appendChild(recommendationDiv);
+    if (value) {
+        const recommendationSection = document.getElementById('recommendations');
+        const newRecommendation = document.createElement('div');
+        newRecommendation.classList.add('recommendation');
+        newRecommendation.textContent = value;
+        recommendationSection.insertBefore(newRecommendation, input);
 
-    showPopup(true);
-  }
+        showPopup(true);
+        input.value = '';
+    }
 }
 
-function showPopup(success) {
-  alert(success ? "Recommendation added successfully!" : "Failed to add recommendation.");
+function showPopup(show) {
+    const popup = document.getElementById('popup');
+    popup.style.display = show ? 'block' : 'none';
+
+    if (show) {
+        setTimeout(() => popup.style.display = 'none', 3000);
+    }
 }
