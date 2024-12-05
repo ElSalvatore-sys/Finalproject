@@ -1,25 +1,25 @@
-function addRecommendation(event) {
-    event.preventDefault(); // Prevent form submission
-    const input = document.getElementById('recommendation_input');
-    const value = input.value.trim();
+document.addEventListener("DOMContentLoaded", () => {
+    const skills = [
+        { name: "HTML5", logo: "https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/html-logo.webp?v=1733410468728" },
+        { name: "CSS3", logo: "https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/css-logo.webp?v=1733410465480" },
+        { name: "JavaScript", logo: "https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/javascript-logo.webp?v=1733410449466" },
+        { name: "React", logo: "https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/react-logo.webp?v=1733410462669" },
+        { name: "Node.js", logo: "https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/nodejs-logo.webp?v=1733410453090" },
+    ];
 
-    if (value) {
-        const recommendationSection = document.getElementById('recommendations');
-        const newRecommendation = document.createElement('div');
-        newRecommendation.classList.add('recommendation');
-        newRecommendation.textContent = `"${value}"`; // Add quotation marks
-        recommendationSection.insertBefore(newRecommendation, recommendationSection.lastElementChild);
+    const skillsContainer = document.getElementById("skills");
 
-        showPopup(true); // Optional popup notification
-        input.value = ''; // Clear the textarea
-    }
-}
+    skills.forEach(skill => {
+        const years = Math.floor(Math.random() * 3) + 1; // Generates a random number between 1 and 3
+        const skillDiv = document.createElement("div");
+        skillDiv.classList.add("skill");
 
-function showPopup(show) {
-    const popup = document.getElementById('popup');
-    popup.style.display = show ? 'block' : 'none';
+        skillDiv.innerHTML = `
+            <img src="${skill.logo}" alt="${skill.name} Logo">
+            <span>${skill.name}</span>
+            <small>${years} years experience</small>
+        `;
 
-    if (show) {
-        setTimeout(() => popup.style.display = 'none', 3000);
-    }
-}
+        skillsContainer.appendChild(skillDiv);
+    });
+});

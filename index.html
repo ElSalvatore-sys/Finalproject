@@ -21,50 +21,72 @@
       </nav>
     </header>
     <section id="aboutme">
-    <h2>About Me</h2>
-    <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/profile-picture.webp?v=1733410457729" alt="Profile Picture" class="profile_image">
-    <p>Hello! I’m John Doe, a passionate web developer with experience in creating modern, responsive websites.</p>
-</section>
+      <h2>About Me</h2>
+      <img
+        src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/profile-picture.webp?v=1733410457729"
+        alt="Profile Picture"
+        class="profile_image"
+      />
+      <p>
+        Hello! I’m John Doe, a passionate web developer with experience in
+        creating modern, responsive websites.
+      </p>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skill">
-        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/html-logo.webp?v=1733410468728" alt="HTML Logo">
+    <section id="skills">
+      <h2>Skills</h2>
+      </section>
+      <div class="skill">
+        <img
+          src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/html-logo.webp?v=1733410468728"
+          alt="HTML Logo"
+        />
         <span>HTML5</span>
-    </div>
-    <div class="skill">
-        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/css-logo.webp?v=1733410465480" alt="CSS Logo">
+      </div>
+      <div class="skill">
+        <img
+          src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/css-logo.webp?v=1733410465480"
+          alt="CSS Logo"
+        />
         <span>CSS3</span>
-    </div>
-    <div class="skill">
-        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/javascript-logo.webp?v=1733410449466" alt="JavaScript Logo">
+      </div>
+      <div class="skill">
+        <img
+          src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/javascript-logo.webp?v=1733410449466"
+          alt="JavaScript Logo"
+        />
         <span>JavaScript</span>
-    </div>
-    <div class="skill">
-        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/react-logo.webp?v=1733410462669" alt="React Logo">
+      </div>
+      <div class="skill">
+        <img
+          src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/react-logo.webp?v=1733410462669"
+          alt="React Logo"
+        />
         <span>React</span>
-    </div>
-    <div class="skill">
-        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/nodejs-logo.webp?v=1733410453090" alt="Node.js Logo">
+      </div>
+      <div class="skill">
+        <img
+          src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/nodejs-logo.webp?v=1733410453090"
+          alt="Node.js Logo"
+        />
         <span>Node.js</span>
-    </div>
-</section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A responsive e-commerce website built with React and Firebase.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>A portfolio website showcasing my skills and projects.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Three</h3>
-        <p>An interactive quiz app using JavaScript and APIs.</p>
       </div>
     </section>
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Chatbot</h3>
+        <p>• Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript, and IBM Watson Assistant.</p>
+    </div>
+    <div class="project-card">
+        <h3>Sentiment Analyzer</h3>
+        <p>• Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU.</p>
+    </div>
+    <div class="project-card">
+        <h3>Fashion Website</h3>
+        <p>• Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart using Stripe for payment.</p>
+    </div>
+</section>
     <section id="recommendations">
     <h2>Recommendations</h2>
     <div class="recommendation">
@@ -77,11 +99,24 @@
         "I highly recommend John for any web development project."
     </div>
 
-    <form id="recommendation_form">
-        <textarea id="recommendation_input" placeholder="Write your recommendation here..." required></textarea>
-        <button id="recommend_btn" onclick="addRecommendation(event)">Submit</button>
+    <!-- Recommendation Form -->
+    <form id="recommendation_form" onsubmit="addRecommendation(event)">
+        <input
+            type="text"
+            id="name_input"
+            placeholder="Your Name (Optional)"
+        />
+        <textarea
+            id="recommendation_input"
+            placeholder="Write your recommendation here..."
+            required
+        ></textarea>
+        <button id="recommend_btn">
+            Submit
+        </button>
     </form>
 </section>
+
 
     <footer>
       <a href="#home">
