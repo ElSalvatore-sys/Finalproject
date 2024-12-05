@@ -1,84 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header id="home">
-        <div class="profile_name">John Doe</div>
-        <nav>
-            <ul>
-                <li class="topmenu"><a href="#aboutme">About Me</a></li>
-                <li class="topmenu"><a href="#skills">Skills</a></li>
-                <li class="topmenu"><a href="#projects">Projects</a></li>
-                <li class="topmenu"><a href="#recommendations">Recommendations</a></li>
-            </ul>
-        </nav>
+      <div class="profile_name">John Doe</div>
+      <nav>
+        <ul>
+          <li class="topmenu"><a href="#aboutme">About Me</a></li>
+          <li class="topmenu"><a href="#skills">Skills</a></li>
+          <li class="topmenu"><a href="#projects">Projects</a></li>
+          <li class="topmenu">
+            <a href="#recommendations">Recommendations</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section id="aboutme">
-        <h2>About Me</h2>
-        <img src="./mnt/data/young-man-at-computer-leaned-back-in-his-chair.webp" alt="Profile Picture" class="profile_image">
-        <p>Hello! I’m John Doe, a passionate web developer with experience in creating modern, responsive websites.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <img src="./mnt/data/1051277.webp" alt="HTML Logo">
-            <span>HTML5</span>
-        </div>
-        <div class="skill">
-            <img src="./mnt/data/file-EUU4sbZKKz7tXt3VW5iqVw.webp" alt="CSS Logo">
-            <span>CSS3</span>
-        </div>
-        <div class="skill">
-            <img src="./mnt/data/javascript-icon-256x256-8sn98o22.webp" alt="JavaScript Logo">
-            <span>JavaScript</span>
-        </div>
-        <div class="skill">
-            <img src="./mnt/data/React.js_logo-512.webp" alt="React Logo">
-            <span>React</span>
-        </div>
-        <div class="skill">
-            <img src="./mnt/data/node-js-icon-227x256-913nazt0.webp" alt="Node.js Logo">
-            <span>Node.js</span>
-        </div>
-    </section>
+    <h2>About Me</h2>
+    <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/profile-picture.webp?v=1733410457729" alt="Profile Picture" class="profile_image">
+    <p>Hello! I’m John Doe, a passionate web developer with experience in creating modern, responsive websites.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/html-logo.webp?v=1733410468728" alt="HTML Logo">
+        <span>HTML5</span>
+    </div>
+    <div class="skill">
+        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/css-logo.webp?v=1733410465480" alt="CSS Logo">
+        <span>CSS3</span>
+    </div>
+    <div class="skill">
+        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/javascript-logo.webp?v=1733410449466" alt="JavaScript Logo">
+        <span>JavaScript</span>
+    </div>
+    <div class="skill">
+        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/react-logo.webp?v=1733410462669" alt="React Logo">
+        <span>React</span>
+    </div>
+    <div class="skill">
+        <img src="https://cdn.glitch.global/91f46380-4843-45fc-8f89-d5391f97805b/nodejs-logo.webp?v=1733410453090" alt="Node.js Logo">
+        <span>Node.js</span>
+    </div>
+</section>
+
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project One</h3>
-            <p>A responsive e-commerce website built with React and Firebase.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project Two</h3>
-            <p>A portfolio website showcasing my skills and projects.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project Three</h3>
-            <p>An interactive quiz app using JavaScript and APIs.</p>
-        </div>
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A responsive e-commerce website built with React and Firebase.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A portfolio website showcasing my skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>An interactive quiz app using JavaScript and APIs.</p>
+      </div>
     </section>
     <section id="recommendations">
-        <h2>Recommendations</h2>
-        <div class="recommendation">"John is an excellent web developer with a keen eye for design."</div>
-        <div class="recommendation">"His attention to detail and technical skills are outstanding."</div>
-        <div class="recommendation">"I highly recommend John for any web development project."</div>
-        <textarea id="recommendation_input" placeholder="Add a recommendation"></textarea>
-        <button id="recommend_btn" onclick="addRecommendation()">Add Recommendation</button>
-    </section>
+    <h2>Recommendations</h2>
+    <div class="recommendation">
+        "John is an excellent web developer with a keen eye for design."
+    </div>
+    <div class="recommendation">
+        "His attention to detail and technical skills are outstanding."
+    </div>
+    <div class="recommendation">
+        "I highly recommend John for any web development project."
+    </div>
+
+    <form id="recommendation_form">
+        <textarea id="recommendation_input" placeholder="Write your recommendation here..." required></textarea>
+        <button id="recommend_btn" onclick="addRecommendation(event)">Submit</button>
+    </form>
+</section>
+
     <footer>
-        <a href="#home">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" width="63px">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-        </a>
+      <a href="#home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewbox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          width="63px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
     </footer>
     <div id="popup" class="popup">
-        <p>Recommendation added successfully!</p>
+      <p>Recommendation added successfully!</p>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

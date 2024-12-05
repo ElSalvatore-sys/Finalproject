@@ -1,4 +1,5 @@
-function addRecommendation() {
+function addRecommendation(event) {
+    event.preventDefault(); // Prevent form submission
     const input = document.getElementById('recommendation_input');
     const value = input.value.trim();
 
@@ -6,11 +7,11 @@ function addRecommendation() {
         const recommendationSection = document.getElementById('recommendations');
         const newRecommendation = document.createElement('div');
         newRecommendation.classList.add('recommendation');
-        newRecommendation.textContent = value;
-        recommendationSection.insertBefore(newRecommendation, input);
+        newRecommendation.textContent = `"${value}"`; // Add quotation marks
+        recommendationSection.insertBefore(newRecommendation, recommendationSection.lastElementChild);
 
-        showPopup(true);
-        input.value = '';
+        showPopup(true); // Optional popup notification
+        input.value = ''; // Clear the textarea
     }
 }
 
