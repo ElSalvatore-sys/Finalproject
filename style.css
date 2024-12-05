@@ -16,30 +16,51 @@ header {
     color: #ffffff;
 }
 
+/* Profile Info Styling */
 .profile_name {
     font-size: 30px;
-    color: #add8e6;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #add8e6; /* Light blue for the name */
+    text-align: left;
 }
 
+.profile_contact {
+    font-size: 14px;
+    margin: 2px 0;
+    color: #ffffff; /* White for phone number and email */
+    text-align: left;
+}
+
+.profile_contact a {
+    color: #ffffff; /* Email link color */
+    text-decoration: none;
+}
+
+.profile_contact a:hover {
+    text-decoration: underline; /* Underline email on hover */
+}
+
+/* Navigation Menu Links */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.topmenu a {
+nav .topmenu a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
 }
 
-.topmenu:hover {
+nav .topmenu a:hover {
     font-weight: bolder;
     text-decoration: underline;
     cursor: pointer;
-    color: #ffffff;
 }
 
+/* Section Styling */
 section {
     padding: 40px 20px;
 }
@@ -63,7 +84,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Skills Section */
 /* Skills Section */
 #skills {
     display: grid;
@@ -107,20 +127,13 @@ h2 {
     text-align: center;
 }
 
-
-skill:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-    background-color: #f9f9f9;
-}
 .skill small {
     font-size: 0.9rem;
     color: #666666;
     margin-top: 5px;
 }
 
-
-/* Projects Section Hover Effect */
+/* Projects Section */
 .project-card {
     padding: 20px;
     border: 1px solid #dddddd;
@@ -150,7 +163,6 @@ skill:hover {
     text-decoration: underline;
 }
 
-/* Leave a Recommendation Styles */
 /* Recommendations Section */
 #recommendations {
     text-align: center;
@@ -177,7 +189,6 @@ skill:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover Effect for Recommendation Box */
 .recommendation:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);

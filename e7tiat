@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center; /* Centers all text by default */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+}
+/* Navigation Menu Links */
+
+/* Profile Info Styling */
+.profile_name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #add8e6; /* Light blue for the name */
+    text-align: left;
+}
+
+.profile_contact {
+    font-size: 14px;
+    margin: 2px 0;
+    color: #ffffff; /* White for phone number and email */
+    text-align: left;
+}
+
+.profile_contact a {
+    color: #ffffff; /* Email link color */
+    text-decoration: none;
+}
+
+.profile_contact a:hover {
+    text-decoration: underline; /* Underline email on hover */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Menu Links */
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_image {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+/* Skills Section */
+#skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjusting grid layout */
+    gap: 15px; /* Space between boxes */
+    justify-items: center; /* Centers the boxes */
+    margin: 0 auto;
+    max-width: 800px; /* Limits the width of the grid */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px; /* Ensures medium size */
+    height: 150px; /* Makes the boxes square */
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.skill img {
+    width: 60px; /* Adjusted size for icons */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+
+skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+.skill small {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 5px;
+}
+
+
+/* Projects Section Hover Effect */
+.project-card {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.project-card h3 {
+    color: #ff5722; /* Orange color for project names */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    list-style: circle inside;
+    text-decoration: underline;
+}
+
+/* Leave a Recommendation Styles */
+/* Recommendations Section */
+#recommendations {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+#recommendations h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* Recommendation Box */
+.recommendation {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-style: italic;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Recommendation Box */
+.recommendation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+/* Recommendation Form */
+#recommendation_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#recommendation_form input,
+#recommendation_form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+#recommendation_form textarea {
+    height: 80px;
+    resize: none;
+}
+
+#recommendation_form button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#recommendation_form button:hover {
+    background-color: #45a049;
+}
