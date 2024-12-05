@@ -23,3 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
         skillsContainer.appendChild(skillDiv);
     });
 });
+function addRecommendation(event) {
+    event.preventDefault(); // Prevents form submission and page reload
+
+    const nameInput = document.getElementById('name_input').value.trim();
+    const recommendationInput = document.getElementById('recommendation_input').value.trim();
+
+    // Check if recommendation input is not empty
+    if (recommendationInput) {
+        const recommendationSection = document.getElementById('recommendations');
+        const newRecommendation = document.createElement('div');
+        newRecommendation.classList.add('recommendation');
+
+        // Construct the recommendation text
+        if (nameInput) {
+            newRecommendation.innerHTML = `<strong>${nameInput} says:</strong><br>"${recommendationInput}"`;
+        } else {
+            newRecommendation.textContent = `"${recommendationInput}"`;
+        }
+
+        // Insert the new recommendation before the form
+        recommendationSection.insertBefore(newRecommendation, recommendationSection.lastElementChild);
+
+        // Clear the form inputs
+        document.getElementById('name_input').value = '';
+        document.getElementById('recommendation_input').value = '';
+
+        // Log a message indicating the function was triggered
+        console.log("addRecommendation function triggered: New recommendation added!");
+    } else {
+        console.log("addRecommendation function triggered: Recommendation input is empty.");
+    }
+}

@@ -113,6 +113,12 @@ skill:hover {
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
     background-color: #f9f9f9;
 }
+.skill small {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 5px;
+}
+
 
 /* Projects Section Hover Effect */
 .project-card {
@@ -145,6 +151,40 @@ skill:hover {
 }
 
 /* Leave a Recommendation Styles */
+/* Recommendations Section */
+#recommendations {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+#recommendations h2 {
+    font-size: 2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+/* Recommendation Box */
+.recommendation {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-style: italic;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect for Recommendation Box */
+.recommendation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+/* Recommendation Form */
 #recommendation_form {
     display: flex;
     flex-direction: column;
